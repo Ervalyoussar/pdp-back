@@ -31,6 +31,8 @@ return new class extends Migration
      */
     public function down(): void
     {
+        // Rollback to old Schema
+
         Schema::dropIfExists('users');
 
         Schema::create('users', function (Blueprint $table) {
