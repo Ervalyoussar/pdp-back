@@ -17,14 +17,5 @@ class UserFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition(): array
-    {
-        return [
-            'id'         => '1',
-            'role_id'    => 0,
-            'name'       => 'admin',
-            'email'      => 'admin@ervalyoussar.fr',
-            'password'   => 'root',
-        ];
-    }
+    public function definition(): void {}
 }
