@@ -108,6 +108,6 @@ class UserController extends Controller
             ], 404);
         }
 
-        return $user->toJson();
+        return response()->json($user->toArray());
     }
 }
